@@ -53,6 +53,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
+    transition: 0s;
 
 }
 .nav-brand{
@@ -68,6 +69,7 @@ nav{
     justify-content: space-evenly;
     align-items: center;
     width: 100px;
+    user-select: none;
 }
 .sidebar{
     width: 18%;
@@ -113,20 +115,25 @@ nav{
 .sidebar ul li:last-of-type{
     border-radius: 0rem 0rem 2rem 2rem ;
 }
+.mobileMenu{
+    animation: opacity .4s;
+}
 .fas{
     color: var(--text-light);
-    animation: opacity .5s;
-    transition:all .5s;
+    width:25px;
+    text-align: center;
 }
 .fas:hover{
     text-shadow:0.1rem 0rem 1rem rgb(243, 243, 243);
+}
+.fa-bar{
+    display: block;
 
 }
-/* .fa-bar{
-    display: block;
-} */
 .fa-times{
     display: none;
+    /* animation: opacity .4s; */
+
 }
 .hide_faBars{
     display: none;;
@@ -136,14 +143,14 @@ nav{
 }
 @keyframes opacity{
     0%{
-        opacity: 0;
+        /* opacity: 0; */
         transform: scale(0);
     }
     50%{
-        opacity: 0.5;
+        /* opacity: 0.5; */
     }
     100%{
-        opacity: 1;
+        /* opacity: 1; */
         transform: scale(1);
     }
 }

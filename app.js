@@ -7,15 +7,12 @@ let faTimes = document.querySelector(".fa-times");
 
 
 // localstorage
-// window.addEventListener("load",()=>{
     let changed = localStorage.getItem("mode");
     if(changed != "light"){
         setDarkMode();
     }else{
         setLightMode();
     }
-
-// })
 
 function setDarkMode(){
     container.classList.remove("lightBackground");
@@ -44,9 +41,6 @@ lightMode.addEventListener('click',()=>{
     }else{
         setLightMode();       
     }
-    // container.classList.toggle("lightBackground");
-    // container.classList.toggle("darkBackground");
-    // localStorage.setItem("mode","1");
 })
 // end localstoreage
 
@@ -56,4 +50,4 @@ mobileMenu.addEventListener("click",()=>{
     faBars.classList.toggle("hide_faBars");
     faTimes.classList.toggle('show_faTimes');
 
-})
+});
