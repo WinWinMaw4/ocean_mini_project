@@ -2,6 +2,9 @@ let lightMode = document.getElementById("light-mode");
 let container = document.querySelector(".container");
 let mobileMenu = document.querySelector("#mobile-menu");
 let sideBar = document.querySelector(".sidebar");
+let faBars = document.querySelector(".fa-bars");
+let faTimes = document.querySelector(".fa-times");
+
 
 // localstorage
 // window.addEventListener("load",()=>{
@@ -48,6 +51,9 @@ lightMode.addEventListener('click',()=>{
 // end localstoreage
 
 mobileMenu.addEventListener("click",()=>{
-    console.log(sideBar);
+    // console.log(sideBar);
     sideBar.classList.toggle("show");
+    faBars.classList.toggle("hide_faBars");
+    faTimes.classList.toggle('show_faTimes');
+
 })
